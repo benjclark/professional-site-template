@@ -11,4 +11,4 @@ EXPOSE 8000
 # COPY . .
 
 # Set the default command to run your application using deno serve
-CMD ["serve", "--watch", "--allow-net", "app.ts"]
+CMD ["deno", "task", "serve"]

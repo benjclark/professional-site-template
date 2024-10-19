@@ -1,0 +1,11 @@
+{
+  "tasks": {
+    "dev": "deno serve --watch --allow-net --allow-read app.ts",
+    "serve": "deno serve --watch --allow-net --allow-read app.ts",
+    "compile-sass": "deno run --allow-read --allow-env --allow-write ./scripts/compile-sass.ts"
+  },
+  "imports": {
+    "handlebars": "npm:handlebars@^4.7.8",
+    "sass": "npm:sass@^1.80.3"
+  }
+}
