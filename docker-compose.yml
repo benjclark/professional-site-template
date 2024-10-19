@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  deno:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    command: ["serve", "--watch", "--allow-net", "server.ts"]
