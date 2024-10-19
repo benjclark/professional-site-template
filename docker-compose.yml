@@ -6,4 +6,4 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
-    command: ["serve", "--watch", "--allow-net", "server.ts"]
+    command: ["serve", "--watch", "--allow-net","--allow-read", "app.ts"]
